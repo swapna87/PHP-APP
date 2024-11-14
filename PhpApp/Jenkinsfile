@@ -1,32 +1,21 @@
 pipeline {
-agent any
-environment {
-    JAVA_HOME="C:/zensar/jenkins-docker-training-dap/jdk-17.0.12_windows-x64_bin/jdk-17.0.12"
-  }
-stages {
-stage('Clean stage') {
-steps {
-dir("PhpApp") {
-bat 'C:/Program Files/maven/apache-maven-3.9.5/bin/mvn clean'
-}
-}
-}
+    agent any
  
-stage('Compile stage') {
-steps {
-dir("PhpApp") {
-bat 'C:/Program Files/maven/apache-maven-3.9.5/bin/mvn compile'
-}
-}
-}
- 
-stage('Install stage') {
-steps {
-dir("PhpApp") {
-bat 'C:/Program Files/maven/apache-maven-3.9.5/bin/mvn install'
-}
-}
-}
- 
-}
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello'
+            }
+        }
+         stage('Hi') {
+            steps {
+                echo 'How are you'
+            }
+        }
+         stage('Bye') {
+            steps {
+                echo 'Thank you'
+            }
+        }
+    }
 }
