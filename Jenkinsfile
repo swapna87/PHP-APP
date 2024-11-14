@@ -7,7 +7,7 @@ stages {
 stage('Clean stage') {
 steps {
 dir("StockApp") {
-bat 'C:/zensar/jenkins-docker-training-dapa/pache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn clean'
+bat 'C:/zensar/jenkins-docker-training-dap/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn clean'
 }
 }
 }
@@ -15,7 +15,7 @@ bat 'C:/zensar/jenkins-docker-training-dapa/pache-maven-3.9.9-bin/apache-maven-3
 stage('Compile stage') {
 steps {
 dir("StockApp") {
-bat 'C:/zensar/jenkins-docker-training-dapa/pache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn compile'
+bat 'C:/zensar/jenkins-docker-training-dap/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn compile'
 }
 }
 }
@@ -23,7 +23,7 @@ bat 'C:/zensar/jenkins-docker-training-dapa/pache-maven-3.9.9-bin/apache-maven-3
 stage('Install stage') {
 steps {
 dir("StockApp") {
-bat 'C:/zensar/jenkins-docker-training-dapa/pache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn install'
+bat 'C:/zensar/jenkins-docker-training-dap/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn install'
 }
 }
 }
