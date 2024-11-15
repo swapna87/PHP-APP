@@ -12,6 +12,16 @@ pipeline {
                 echo 'How are you'
             }
         }
+        stage('Welcome') {
+            steps {
+                echo 'Welcome to Jenkins pipeline'
+            }
+        }
+        stage('New') {
+            steps {
+                echo 'What are you doing'
+            }
+        }
          stage('Bye') {
             steps {
                 echo 'Thank you'
